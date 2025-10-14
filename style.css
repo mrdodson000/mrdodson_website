@@ -48,3 +48,17 @@ h1 {
     height: auto;
     margin-top: 20px;
 }
+.text-image-container {
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    gap: 20px;
+}
+.text-image-container img {
+    max-height: 200px;
+    width: auto;
+}
+.text-image-container p {
+    flex: 1;
+    margin: 0;
+}
