@@ -29,3 +29,22 @@
 body {
   font-family: "Computer Modern Serif", serif;
 }
+h1 {
+  text-align: center;
+}
+.two-column-container {
+    display: flex;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.left-half, .right-half {
+    flex: 1;
+    text-align: left;
+}
+.right-half img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
