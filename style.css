@@ -48,6 +48,11 @@ h1 {
     height: auto;
     margin-top: 20px;
 }
+.about-me {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 20px;
+}
 .text-image-container {
     display: flex;
     align-items: left;
@@ -87,3 +92,16 @@ h1 {
     background-color: #000;
     color: white;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
