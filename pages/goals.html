@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>mrdodson website</title>
+    <link rel="stylesheet" href="../style.css">
+  </head>
+  <body>
+    <h1>Goals</h1>
+    <div class="about-me">
+      <h2>Goal 1</h2>
+      <p>Goal 1 blah blah blah blah</p>
+      <div class="drop-down-button"> How Goal 1</div>
+      <div class="drop-down-content">
+	<p>asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh </p>
+      </div>
+      <h2 class="right-justified">Goal 2</h2>
+      <p>Goal 2 blah blah blah blah</p>
+      <div class="drop-down-button"> How Goal 2</div>
+      <div class="drop-down-content">
+	<p>asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh </p>
+      </div>
+      <h2>Goal 3</h2>
+      <p>Goal 3 blah blah blah blah</p>
+      <div class="drop-down-button"> How Goal 3</div>
+      <div class="drop-down-content">
+	<p>asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh asfdgmkjh </p>
+      </div>
+      <p></p>
+      <div class="button-container">
+	<a href="../index.html" class="nav-button">Back to Home</a>
+      </div>
+    </div>
+    <script>
+      document.querySelectorAll('.drop-down-button').forEach(button => {
+	  button.addEventListener('click', () => {
+	      button.classList.toggle('active');
+	      const content = button.nextElementSibling;
+	      content.classList.toggle('active');
+	  });
+      });
+    </script>
+  </body>
+</html>
