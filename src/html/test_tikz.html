@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>mrdodson website</title>
+  <link rel="stylesheet" href="../../good_font.css">
+</head>
+<body>
+<h1>Category Theory: Commutative Diagrams</h1>
+<h2>Basic Commutative Square</h2>
+<p>Consider the following commutative diagram:</p>
+<p><img src="../svg/1c8b3b30ae71744e5e62e2ca0a65d1ea.svg" style="vertical-align: -0.0em; height: 5.918317em;" alt="
+\begin{tikzcd}
+A \arrow[r, &quot;f&quot;] \arrow[d, &quot;g&quot;&#x27;] &amp; B \arrow[d, &quot;h&quot;] \\
+C \arrow[r, &quot;k&quot;&#x27;] &amp; D
+\end{tikzcd}
+"></p>
+<p>This diagram commutes if <img src="../svg/29a99eff7976c95d8acc841841f68abd.svg" style="vertical-align: -0.204765em; height: 0.911405em;" alt="h \circ f = k \circ g">.</p>
+<h2>Functors Between Categories</h2>
+<p>A functor <img src="../svg/4dba808ec886d3cba769ef554acdb459.svg" style="vertical-align: -0.02409em; height: 0.731734em;" alt="F: \mathcal{C} \to \mathcal{D}"> preserves composition:</p>
+<p><img src="../svg/5e8386c4abe3a0b5d20caef4742f15d6.svg" style="vertical-align: -0.0em; height: 5.347547em;" alt="
+\begin{tikzcd}
+X \arrow[r, &quot;f&quot;] \arrow[dr, &quot;g \circ f&quot;&#x27;] &amp; Y \arrow[d, &quot;g&quot;] \\
+&amp; Z
+\end{tikzcd}
+"></p>
+<h2>Natural Transformation</h2>
+<p>Given functors <img src="../svg/f0b906a44f19a68bd6c76f5ffa473704.svg" style="vertical-align: -0.193724em; height: 0.901367em;" alt="F, G: \mathcal{C} \to \mathcal{D}">, a natural transformation <img src="../svg/d9ef99e3942c78e195408c5613f49707.svg" style="vertical-align: -0.215806em; height: 0.922446em;" alt="\eta: F \Rightarrow G"> satisfies:</p>
+<p><img src="../svg/e970bcc9900f733f39c6054298d33c24.svg" style="vertical-align: -0.0em; height: 6.04639em;" alt="
+\begin{tikzcd}
+F(X) \arrow[r, &quot;\eta_X&quot;] \arrow[d, &quot;F(f)&quot;&#x27;] &amp; G(X) \arrow[d, &quot;G(f)&quot;] \\
+F(Y) \arrow[r, &quot;\eta_Y&quot;&#x27;] &amp; G(Y)
+\end{tikzcd}
+"></p>
+<h2>Pullback Square</h2>
+<p>The pullback of <img src="../svg/82e33c4219c5a1874fc97dbb15276d6b.svg" style="vertical-align: -0.204765em; height: 0.911405em;" alt="f: X \to Z"> and <img src="../svg/d832dc8ef412d659975e16c5b0412e1c.svg" style="vertical-align: -0.204765em; height: 0.890326em;" alt="g: Y \to Z"> is:</p>
+<p><img src="../svg/0cff18077f27dd3fd58ce4080d9d9bb3.svg" style="vertical-align: -0.0em; height: 5.860602em;" alt="
+\begin{tikzcd}
+P \arrow[r, &quot;p_2&quot;] \arrow[d, &quot;p_1&quot;&#x27;] \arrow[dr, phantom, &quot;\lrcorner&quot;, very near start] &amp; Y \arrow[d, &quot;g&quot;] \\
+X \arrow[r, &quot;f&quot;&#x27;] &amp; Z
+\end{tikzcd}
+"></p>
+<h2>Complex Diagram</h2>
+<p>The snake lemma:</p>
+<p><img src="../svg/27255e16700bf554025034b1ffb051b8.svg" style="vertical-align: -0.0em; height: 6.206086em;" alt="
+\begin{tikzcd}
+&amp; A \arrow[r, &quot;f&quot;] \arrow[d, &quot;\alpha&quot;] &amp; B \arrow[r, &quot;g&quot;] \arrow[d, &quot;\beta&quot;] &amp; C \arrow[r] \arrow[d, &quot;\gamma&quot;] &amp; 0 \\
+0 \arrow[r] &amp; A&#x27; \arrow[r, &quot;f&#x27;&quot;&#x27;] &amp; B&#x27; \arrow[r, &quot;g&#x27;&quot;&#x27;] &amp; C&#x27;
+\end{tikzcd}
+"></p>
+<p>In category theory, we often work with such diagrams where morphisms <img src="../svg/abf81676bc016dce3ce2f7d24075e7a0.svg" style="vertical-align: -0.214802em; height: 0.922446em;" alt="f, g, \alpha, \beta, \gamma"> satisfy certain properties.</p>
+</body>
+</html>

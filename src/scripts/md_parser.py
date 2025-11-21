@@ -44,6 +44,7 @@ def md_process(md_file, svg_path):
     \usepackage{amsfonts}
     \usepackage{amssymb}
     \usepackage{amstext}
+    \usepackage{tikz-cd}
     '''
             
     md_pre_processed, latex_blocks, latex_inline = latex_pre_process(md_text)
