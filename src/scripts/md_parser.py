@@ -51,7 +51,7 @@ def md_process(md_file, svg_path):
         with open(output_path, 'w') as f:
             f.write(result['svg'])
         
-        svg_html = f'<img src="../src/svg/{file_hash}" style="vertical-align: -{result["depth"]}pt" alt="{html.escape(latex)}">'
+        svg_html = f'<img src="../src/svg/{file_hash}" style="vertical-align: -{result["valign"]}em" alt="{html.escape(latex)}">'
         html_output = html_output.replace(f"__BLOCK_LATEX_{i}__", svg_html)
 
     for i, latex in enumerate(latex_inline):
@@ -63,7 +63,7 @@ def md_process(md_file, svg_path):
         with open(output_path, 'w') as f:
             f.write(result['svg'])
         
-        svg_html = f'<img src="../src/svg/{file_hash}" style="vertical-align: -{result["depth"]}pt" alt="{html.escape(latex)}">'
+        svg_html = f'<img src="../src/svg/{file_hash}" style="vertical-align: -{result["valign"]}em" alt="{html.escape(latex)}">'
         html_output = html_output.replace(f"__INLINE_LATEX_{i}__", svg_html)
         
     return html_output
