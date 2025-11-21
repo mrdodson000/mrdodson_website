@@ -19,3 +19,5 @@ x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
 $$
 
 This is a fundamental formula in algebra.
+
+This is some random crap I'm adding to see if this works. Maybe file creation doesn't actually count as a diff (that would be funny lol).

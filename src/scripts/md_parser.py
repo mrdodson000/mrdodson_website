@@ -73,20 +73,27 @@ def md_parse(website_root_path):
     md_path = Path(website_root_path) / "src/md/"
     html_path = Path(website_root_path) / "src/html/"
     svg_path = Path(website_root_path) / "src/svg/"
-    
+
+    print(f"DEBUG: md_path={md_path}")
+    print(f"DEBUG: svg_path exists={svg_path.exists()}")
+
     result = subprocess.run(
         ['git', 'diff', '--name-only', 'HEAD~1'],
         capture_output = True,
         text = True,
-        check = True
+        check = True,
+        cwd = website_root_path
         )
 
     all_modified = result.stdout.strip().split('\n')
+    print(f"DEBUG: all_modified={all_modified}")
 
     md_modified = [f for f in all_modified
                    if f.endswith(".md")
                    and Path(f).is_relative_to(md_path)
                    and Path(f).exists()]
+
+    print(f"DEBUG: md_modified={md_modified}")
 
     for md_file in md_modified:
         
