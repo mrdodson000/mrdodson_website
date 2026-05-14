@@ -1,3 +1,7 @@
+title: mrdodson wesbite
+author: Maxwell R. Dodson
+css: ../../good_font.css
+
 # Test Page!
 
 Thank you emacs, very cool. Here is a footnote.[^1] $ax + by = \gcd(x, y)$. 
