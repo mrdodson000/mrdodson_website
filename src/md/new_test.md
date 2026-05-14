@@ -8,5 +8,10 @@ Thank you emacs, very cool. Here is a footnote.[^1] $ax + by = \gcd(x, y)$.
 Adding another change. Maybe this will make it work? I remember having some
 problem similar to this before.
 
+> I love block quotes so much
+>
+> They are my favorite type of quote
+> Keep quoting, king
+
 [^1]: I don't know what I am doing. 
 	How do I put more things in this footnote? Nobody will ever know.
