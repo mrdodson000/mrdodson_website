@@ -27,5 +27,27 @@
   src: url("src/fonts/CMUSerif-BoldItalic.woff2");
 }
 body {
-  font-family: "Computer Modern Serif", serif;
+    font-family: "Computer Modern Serif", serif;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 20px;
+}
+h1 {
+    text-align: center;
+}
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    width: 650px;
+}
+a {
+    color: black;
+}
+a:hover {
+    color: grey;
+}
+hr {
+    border: none;
+    height: 2px;
+    background-color: black;
 }

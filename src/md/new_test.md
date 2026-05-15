@@ -14,4 +14,5 @@ problem similar to this before.
 > Keep quoting, king
 
 [^1]: I don't know what I am doing. 
-	How do I put more things in this footnote? Nobody will ever know.
+	
+	  How do I put more things in this footnote? Nobody will ever know.
